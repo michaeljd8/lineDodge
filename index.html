@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>LINE DODGE!</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div id="game"></div>
+    <div id="title">LINE DODGE!</div>
+    <div id="score"></div>
+    <div id="highScore"></div>
+    <div id="arrowPad">
+        <div class="square" id="top-left"><button onclick="changeColor(this)"><img src="pointer.png" alt="Button"></button></div>
+        <div class="square" id="top-right"><button onclick="changeColor(this)"><img src="pointer.png" alt="Button"></button></div>
+        <div class="square" id="bottom-left"><button onclick="changeColor(this)"><img src="pointer.png" alt="Button"></button></div>
+        <div class="square" id="bottom-right"><button onclick="changeColor(this)"><img src="pointer.png" alt="Button"></button></div>
+    </div>
+    <script src="game.js"></script> 
+</body>
+</html>

@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Press Start 2P';
+    src: url('PressStart2P-Regular.ttf');
+}
+
+
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+    background-color: #000;
+}
+
+#game {
+    position: absolute;
+    top: 21vh;
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0); /* Adjust for the left offset */
+    height: 46.1vh;
+    max-width: 100vw;
+    width: 46.1vh;
+    background-color: #ffffff;
+    border: 5px solid #ff0000;
+}
+
+#title {
+    position: absolute;
+    border: 4px solid #ff0000;
+    top: 0;
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, 0); /* Adjust for the left offset */
+    width: 100%;
+    height: 6vh;
+    width: 46.1vh;
+    background-color: #000;
+    text-shadow: 4px 4px 0 #ff0000;
+    color: #fff;
+    text-align: center;
+    padding-top: 3vh;
+    font-size: 6vw;
+    /*transform: scaleY(2);*/
+}
+
+#arrowPad {
+    position: absolute;
+    bottom: 0; /* Position it at the bottom of the viewport */
+    left: 50%; /* Center horizontally */
+    height: 30vh; /* Take up the remaining vertical space */
+    width: 30vh; /* Make it square */
+    background-color: #ffffff; /* Change as needed */
+
+    transform: translate(-50%, 0); /* Adjust for the left offset */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.square {
+    background-color: #ff0000; /* Change as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #000;
+}
+
+button img {
+    width: 10vh;  /* or any size you want */
+    height: 10vh;
+}
+
+#top-left img {
+    transform: rotate(45deg);
+}
+
+#top-right img {
+    transform: rotate(135deg);
+}
+
+#bottom-left img {
+    transform: rotate(-45deg);
+}
+
+#bottom-right img {
+    transform: rotate(-135deg);
+}
+
+#score {
+    position: absolute;
+    top: 12vh; /* Adjust as needed */
+    left: 10vh; /* Adjust as needed */
+    height: 6vh; /* Adjust as needed */
+    width: 30vw; /* Adjust as needed */
+    background-color: #fff; /* Change as needed */
+    border: 2px solid #ff0000;
+    /* Add any other styles as needed */
+}
+
+#highScore {
+    position: absolute;
+    top: 12vh; /* Adjust as needed */
+    right: 10vh; /* Adjust as needed */
+    height: 6vh; /* Adjust as needed */
+    width: 30vw; /* Adjust as needed */
+    background-color: #fff; /* Change as needed */
+    border: 2px solid #ff0000;
+    /* Add any other styles as needed */
+}
